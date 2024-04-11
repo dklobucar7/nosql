@@ -1,0 +1,252 @@
+[
+    {
+        "name": "pidnum",
+        "role": "ID",
+        "type": "Integer",
+        "demographic": null,
+        "description": "Patient ID",
+        "units": null,
+        "missing_values": "no"
+        //"Continuous"
+    },
+    {
+        "name": "cid",
+        "role": "Target",
+        "type": "Binary",
+        "demographic": null,
+        "description": "censoring indicator (1 = failure, 0 = censoring)",
+        "units": null,
+        "missing_values": "no"
+        //Categorical
+    },
+    {
+        "name": "time",
+        "role": "Feature",
+        "type": "Integer",
+        "demographic": null,
+        "description": "time to failure or censoring",
+        "units": null,
+        "missing_values": "no"
+        //"Continuous"
+    },
+    {
+        "name": "trt",
+        "role": "Feature",
+        "type": "Integer",
+        "demographic": null,
+        "description": "treatment indicator (0 = ZDV only; 1 = ZDV + ddI, 2 = ZDV + Zal, 3 = ddI only)",
+        "units": null,
+        "missing_values": "no"
+        //Categorical
+    },
+    {
+        "name": "age",
+        "role": "Feature",
+        "type": "Integer",
+        "demographic": "Age",
+        "description": "age (yrs) at baseline",
+        "units": null,
+        "missing_values": "no"
+        //"Continuous"
+    },
+    {
+        "name": "wtkg",
+        "role": "Feature",
+        "type": "Continuous",
+        "demographic": null,
+        "description": "weight (kg) at baseline",
+        "units": null,
+        "missing_values": "no"
+        //"Continuous"
+    },
+    {
+        "name": "hemo",
+        "role": "Feature",
+        "type": "Binary",
+        "demographic": null,
+        "description": "hemophilia (0=no, 1=yes)",
+        "units": null,
+        "missing_values": "no"
+        //Categorical
+    },
+    {
+        "name": "homo",
+        "role": "Feature",
+        "type": "Binary",
+        "demographic": "Sexual Orientation",
+        "description": "homosexual activity (0=no, 1=yes)",
+        "units": null,
+        "missing_values": "no"
+        //Categorical
+    },
+    {
+        "name": "drugs",
+        "role": "Feature",
+        "type": "Binary",
+        "demographic": null,
+        "description": "history of IV drug use (0=no, 1=yes)",
+        "units": null,
+        "missing_values": "no"
+        //Categorical
+    },
+    {
+        "name": "karnof",
+        "role": "Feature",
+        "type": "Integer",
+        "demographic": null,
+        "description": "Karnofsky score (on a scale of 0-100)",
+        "units": null,
+        "missing_values": "no"
+        //"Continuous"
+    },
+    {
+        "name": "oprior",
+        "role": "Feature",
+        "type": "Binary",
+        "demographic": null,
+        "description": "Non-ZDV antiretroviral therapy pre-175 (0=no, 1=yes)",
+        "units": null,
+        "missing_values": "no"
+        //Categorical
+    },
+    {
+        "name": "z30",
+        "role": "Feature",
+        "type": "Binary",
+        "demographic": null,
+        "description": "ZDV in the 30 days prior to 175 (0=no, 1=yes)",
+        "units": null,
+        "missing_values": "no"
+        //Categorical
+    },
+    {
+        "name": "zprior",
+        "role": "Feature",
+        "type": "Binary",
+        "demographic": null,
+        "description": "ZDV prior to 175 (0=no, 1=yes)",
+        "units": null,
+        "missing_values": "no"
+        //Categorical
+    },
+    {
+        "name": "preanti",
+        "role": "Feature",
+        "type": "Integer",
+        "demographic": null,
+        "description": "# days pre-175 anti-retroviral therapy",
+        "units": null,
+        "missing_values": "no"
+        //"Continuous"
+    },
+    {
+        "name": "race",
+        "role": "Feature",
+        "type": "Integer",
+        "demographic": "Race",
+        "description": "race (0=White, 1=non-white)",
+        "units": null,
+        "missing_values": "no"
+        //Categorical
+    },
+    {
+        "name": "gender",
+        "role": "Feature",
+        "type": "Binary",
+        "demographic": "Gender",
+        "description": "gender (0=F, 1=M)",
+        "units": null,
+        "missing_values": "no"
+        //Categorical
+    },
+    {
+        "name": "str2",
+        "role": "Feature",
+        "type": "Binary",
+        "demographic": null,
+        "description": "antiretroviral history (0=naive, 1=experienced)",
+        "units": null,
+        "missing_values": "no"
+        //Categorical
+    },
+    {
+        "name": "strat",
+        "role": "Feature",
+        "type": "Integer",
+        "demographic": null,
+        "description": "antiretroviral history stratification (1='Antiretroviral Naive',2='> 1 but <= 52 weeks of prior antiretroviral therapy',3='> 52 weeks)",
+        "units": null,
+        "missing_values": "no"
+        //Categorical
+    },
+    {
+        "name": "symptom",
+        "role": "Feature",
+        "type": "Binary",
+        "demographic": null,
+        "description": "symptomatic indicator (0=asymp, 1=symp)",
+        "units": null,
+        "missing_values": "no"
+        //Categorical
+    },
+    {
+        "name": "treat",
+        "role": "Feature",
+        "type": "Binary",
+        "demographic": null,
+        "description": "treatment indicator (0=ZDV only, 1=others)",
+        "units": null,
+        "missing_values": "no"
+        //Categorical
+    },
+    {
+        "name": "offtrt",
+        "role": "Feature",
+        "type": "Binary",
+        "demographic": null,
+        "description": "indicator of off-trt before 96+/-5 weeks (0=no,1=yes)",
+        "units": null,
+        "missing_values": "no"
+        //Categorical
+    },
+    {
+        "name": "cd40",
+        "role": "Feature",
+        "type": "Integer",
+        "demographic": null,
+        "description": "CD4 at baseline",
+        "units": null,
+        "missing_values": "no"
+        //"Continuous"
+    },
+    {
+        "name": "cd420",
+        "role": "Feature",
+        "type": "Integer",
+        "demographic": null,
+        "description": "CD4 at 20+/-5 weeks",
+        "units": null,
+        "missing_values": "no"
+        //"Continuous"
+    },
+    {
+        "name": "cd80",
+        "role": "Feature",
+        "type": "Integer",
+        "demographic": null,
+        "description": "CD8 at baseline",
+        "units": null,
+        "missing_values": "no"
+        //"Continuous"
+    },
+    {
+        "name": "cd820",
+        "role": "Feature",
+        "type": "Integer",
+        "demographic": null,
+        "description": "CD8 at 20+/-5 weeks",
+        "units": null,
+        "missing_values": "no"
+        //"Continuous"
+    }
+]

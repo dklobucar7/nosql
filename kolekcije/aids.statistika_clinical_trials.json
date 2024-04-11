@@ -1,0 +1,54 @@
+[{
+  "_id": "time",
+  "srednjaVrijednost": 879.0981767180925,
+  "standardnaDevijacija": 292.2743237909696,
+  "brojNomissingElemenata": 2139
+},
+{
+  "_id": "age",
+  "srednjaVrijednost": 35.24824684431977,
+  "standardnaDevijacija": 8.70902623400872,
+  "brojNomissingElemenata": 2139
+},
+{
+  "_id": "wtkg",
+  "srednjaVrijednost": 75.12531051893409,
+  "standardnaDevijacija": 13.263164003518348,
+  "brojNomissingElemenata": 2139
+},
+{
+  "_id": "karnof",
+  "srednjaVrijednost": 95.44647031323048,
+  "standardnaDevijacija": 5.900984556229986,
+  "brojNomissingElemenata": 2139
+},
+{
+  "_id": "preanti",
+  "srednjaVrijednost": 379.17578307620386,
+  "standardnaDevijacija": 468.6575257860923,
+  "brojNomissingElemenata": 2139
+},
+{
+  "_id": "cd40",
+  "srednjaVrijednost": 350.5011687704535,
+  "standardnaDevijacija": 118.57386252156317,
+  "brojNomissingElemenata": 2139
+},
+{
+  "_id": "cd420",
+  "srednjaVrijednost": 371.3071528751753,
+  "standardnaDevijacija": 144.6349089115317,
+  "brojNomissingElemenata": 2139
+},
+{
+  "_id": "cd80",
+  "srednjaVrijednost": 986.6273959794296,
+  "standardnaDevijacija": 480.19775024738954,
+  "brojNomissingElemenata": 2139
+},
+{
+  "_id": "cd820",
+  "srednjaVrijednost": 935.369798971482,
+  "standardnaDevijacija": 444.9760509468832,
+  "brojNomissingElemenata": 2139
+}]

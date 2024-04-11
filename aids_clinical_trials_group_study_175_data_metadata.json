@@ -1,0 +1,73 @@
+{
+    "uci_id": 890,
+    "name": "AIDS Clinical Trials Group Study 175",
+    "repository_url": "https://archive.ics.uci.edu/dataset/890/aids+clinical+trials+group+study+175",
+    "data_url": "https://archive.ics.uci.edu/static/public/890/data.csv",
+    "abstract": "The AIDS Clinical Trials Group Study 175 Dataset contains healthcare statistics and categorical information about patients who have been diagnosed with AIDS. This dataset was initially published in 1996. The prediction task is to predict whether or not each patient died within a certain window of time or not. ",
+    "area": "Health and Medicine",
+    "tasks": [
+        "Classification",
+        "Regression"
+    ],
+    "characteristics": [
+        "Tabular",
+        "Multivariate"
+    ],
+    "num_instances": 2139,
+    "num_features": 23,
+    "feature_types": [
+        "Categorical",
+        "Integer"
+    ],
+    "demographics": [
+        "Age",
+        "Sexual Orientation",
+        "Race",
+        "Gender"
+    ],
+    "target_col": [
+        "cid"
+    ],
+    "index_col": [
+        "pidnum"
+    ],
+    "has_missing_values": "no",
+    "missing_values_symbol": null,
+    "year_of_dataset_creation": 1996,
+    "last_updated": "Fri Nov 03 2023",
+    "dataset_doi": "10.24432/C5ZG8F",
+    "creators": [
+        "S. Hammer",
+        "D. Katzenstein",
+        "M. Hughes",
+        "H. Gundacker",
+        "R. Schooley",
+        "R. Haubrich",
+        "W. K.",
+        "M. Lederman",
+        "J. Phair",
+        "M. Niu",
+        "M. Hirsch",
+        "T. Merigan"
+    ],
+    "intro_paper": {
+        "title": "A trial comparing nucleoside monotherapy with combination therapy in HIV-infected adults with CD4 cell counts from 200 to 500 per cubic millimeter. AIDS Clinical Trials Group Study 175 Study Team.",
+        "authors": "S. Hammer, D. Katzenstein, M. Hughes, H. Gundacker, R. Schooley, R. Haubrich, W. K. Henry, M. Lederman, J. Phair, M. Niu, M. Hirsch, T. Merigan",
+        "published_in": "New England Journal of Medicine",
+        "year": 1996,
+        "url": "https://www.semanticscholar.org/paper/c7c401dd7d49ead07e70b299e422b27314589d2f",
+        "doi": null
+    },
+    "additional_info": {
+        "summary": null,
+        "purpose": "To examine the performance of two different types of AIDS treatments",
+        "funded_by": "- AIDS Clinical Trials Group of the National Institute of Allergy and Infectious Diseases\n- General Research Center units funded by the National Center for Research Resources",
+        "instances_represent": "- Health records\n- AIDS patients\n- US only",
+        "recommended_data_splits": "Cross validation or a single train-test split could be used.",
+        "sensitive_data": "- Ethnicity (race)\n- Gender",
+        "preprocessing_description": "No",
+        "variable_info": "- Personal information (age, weight, race, gender, sexual activity)\n- Medical history (hemophilia, history of IV drugs)\n- Treatment history (ZDV/non-ZDV treatment history)\n- Lab results (CD4/CD8 counts)",
+        "citation": null
+    },
+    "external_url": "https://classic.clinicaltrials.gov/ct2/show/NCT00000625"
+}
