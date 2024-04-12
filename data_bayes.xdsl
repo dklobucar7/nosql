@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only -->
+<smile version="1.0" id="data_bayes" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="trt">
+			<state id="State0" />
+			<state id="State1" />
+			<state id="State2" />
+			<state id="State3" />
+			<probabilities>0.2487143525011688 0.244039270687237 0.2449742870500234 0.2622720897615708</probabilities>
+		</cpt>
+		<cpt id="oprior">
+			<state id="State0" />
+			<state id="State1" />
+			<probabilities>0.9780271154745208 0.0219728845254792</probabilities>
+		</cpt>
+		<cpt id="treat">
+			<state id="State0" />
+			<state id="State1" />
+			<parents>trt oprior</parents>
+			<probabilities>0.9990328820116054 0.0009671179883945841 0.9705882352941176 0.02941176470588235 0.0009727626459143969 0.9990272373540856 0.05 0.9500000000000001 0.0009765625 0.9990234375 0.03571428571428571 0.9642857142857142 0.0009041591320072332 0.9990958408679927 0.05 0.9500000000000001</probabilities>
+		</cpt>
+		<cpt id="str2">
+			<state id="State0" />
+			<state id="State1" />
+			<parents>trt treat</parents>
+			<probabilities>0.419172932330827 0.5808270676691729 0.5 0.5 0.5 0.5 0.4080459770114943 0.5919540229885057 0.5 0.5 0.4045801526717557 0.5954198473282443 0.5 0.5 0.4242424242424242 0.5757575757575757</probabilities>
+		</cpt>
+		<cpt id="cd40">
+			<state id="s1_below_235" />
+			<state id="s2_235_459" />
+			<state id="s3_459_up" />
+			<probabilities>0.1659654043945769 0.6657316503038804 0.1683029453015428</probabilities>
+		</cpt>
+		<cpt id="cd420">
+			<state id="s1_below_237" />
+			<state id="s2_237_420" />
+			<state id="s3_420_up" />
+			<parents>str2 treat cd40</parents>
+			<probabilities>0.5119047619047619 0.4761904761904762 0.0119047619047619 0.131578947368421 0.5592105263157895 0.3092105263157894 0.06818181818181818 0.2272727272727273 0.7045454545454546 0.2765957446808511 0.5957446808510638 0.1276595744680851 0.04761904761904762 0.4761904761904762 0.4761904761904762 0.0078125 0.1953125 0.796875 0.7908496732026142 0.2026143790849673 0.006535947712418299 0.213953488372093 0.6325581395348837 0.1534883720930232 0.04545454545454546 0.5 0.4545454545454546 0.4673913043478261 0.4891304347826087 0.04347826086956522 0.1477272727272727 0.6006493506493507 0.2516233766233766 0.01388888888888889 0.2777777777777778 0.7083333333333333</probabilities>
+		</cpt>
+		<cpt id="time">
+			<state id="s1_below_890" />
+			<state id="s2_890_1069" />
+			<state id="s3_1069_1119" />
+			<state id="s4_1119_up" />
+			<parents>str2 cd420</parents>
+			<probabilities>0.6352941176470588 0.2352941176470588 0.07058823529411765 0.05882352941176471 0.3759398496240601 0.4360902255639098 0.08771929824561403 0.100250626566416 0.2114427860696518 0.5049751243781094 0.1169154228855721 0.1666666666666667 0.6067415730337079 0.198501872659176 0.1123595505617977 0.08239700374531836 0.31437125748503 0.2634730538922156 0.2290419161676647 0.1931137724550898 0.1540880503144654 0.2735849056603774 0.2641509433962264 0.3081761006289309</probabilities>
+		</cpt>
+		<cpt id="age">
+			<state id="s1_below_34" />
+			<state id="s2_34_up" />
+			<probabilities>0.4656381486676017 0.5343618513323983</probabilities>
+		</cpt>
+		<cpt id="preanti">
+			<state id="s1_below_142" />
+			<state id="s2_142_902" />
+			<state id="s3_902_up" />
+			<parents>str2</parents>
+			<probabilities>0.9992484028560692 0.0003757985719654265 0.0003757985719654265 0.1452513966480447 0.5674381484437351 0.2873104549082203</probabilities>
+		</cpt>
+		<cpt id="strat">
+			<state id="State1" />
+			<state id="State2" />
+			<state id="State3" />
+			<parents>oprior preanti</parents>
+			<probabilities>0.8350612629594721 0.1630537229029218 0.001885014137606032 0.0004909180166912126 0.3318605792832597 0.6676485027000491 0.0009416195856873823 0.006591337099811676 0.9924670433145009 0.04166666666666667 0.7916666666666669 0.1666666666666667 0.009803921568627451 0.1274509803921569 0.8627450980392156 0.04166666666666666 0.04166666666666666 0.9166666666666666</probabilities>
+		</cpt>
+		<cpt id="z30">
+			<state id="State0" />
+			<state id="State1" />
+			<parents>oprior strat</parents>
+			<probabilities>0.984198645598194 0.01580135440180587 0.105 0.895 0.0260545905707196 0.9739454094292804 0.5 0.5 0.7000000000000001 0.3 0.5405405405405406 0.4594594594594595</probabilities>
+		</cpt>
+		<cpt id="hemo">
+			<state id="State0" />
+			<state id="State1" />
+			<parents>age z30</parents>
+			<probabilities>0.9327902240325865 0.06720977596741344 0.805940594059406 0.1940594059405941 0.9681528662420382 0.03184713375796178 0.9494047619047619 0.0505952380952381</probabilities>
+		</cpt>
+		<cpt id="drugs">
+			<state id="State0" />
+			<state id="State1" />
+			<probabilities>0.8686302010285181 0.131369798971482</probabilities>
+		</cpt>
+		<cpt id="race">
+			<state id="State0" />
+			<state id="State1" />
+			<parents>preanti</parents>
+			<probabilities>0.6760299625468165 0.3239700374531835 0.6976090014064698 0.3023909985935302 0.8444444444444444 0.1555555555555556</probabilities>
+		</cpt>
+		<cpt id="homo">
+			<state id="State0" />
+			<state id="State1" />
+			<parents>hemo drugs race</parents>
+			<probabilities>0.1342170671085335 0.8657829328914664 0.4852941176470588 0.5147058823529411 0.4404761904761905 0.5595238095238095 0.8055555555555555 0.1944444444444444 0.943661971830986 0.05633802816901409 0.9696969696969697 0.0303030303030303 0.9166666666666666 0.08333333333333333 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="gender">
+			<state id="State0" />
+			<state id="State1" />
+			<parents>hemo homo</parents>
+			<probabilities>0.6353790613718412 0.3646209386281589 0.007829181494661922 0.9921708185053382 0.02923976608187134 0.9707602339181286 0.05 0.9500000000000001</probabilities>
+		</cpt>
+		<cpt id="wtkg">
+			<state id="s1_below_63" />
+			<state id="s2_63_69" />
+			<state id="s3_69_74" />
+			<state id="s4_74_up" />
+			<parents>hemo gender</parents>
+			<probabilities>0.4242424242424243 0.1845730027548209 0.1294765840220386 0.2617079889807162 0.09210526315789473 0.1629072681704261 0.1917293233082707 0.5532581453634084 0.5416666666666666 0.04166666666666666 0.2083333333333333 0.2083333333333333 0.2685714285714286 0.1257142857142857 0.1714285714285714 0.4342857142857143</probabilities>
+		</cpt>
+		<cpt id="karnof">
+			<state id="s1_below_90" />
+			<state id="s2_90_up" />
+			<parents>drugs</parents>
+			<probabilities>0.03659849300322927 0.9634015069967706 0.07473309608540925 0.9252669039145907</probabilities>
+		</cpt>
+		<cpt id="cid">
+			<state id="State0" />
+			<state id="State1" />
+			<parents>time cd40 cd420</parents>
+			<probabilities>0.09615384615384616 0.9038461538461539 0.4754098360655738 0.5245901639344263 0.6666666666666666 0.3333333333333333 0.1775700934579439 0.8224299065420561 0.4521072796934866 0.5478927203065134 0.611764705882353 0.3882352941176471 0.08333333333333333 0.9166666666666666 0.3421052631578947 0.6578947368421052 0.5869565217391304 0.4130434782608696 0.7297297297297298 0.2702702702702703 0.8307692307692308 0.1692307692307692 0.9166666666666666 0.08333333333333333 0.7999999999999999 0.2 0.8844621513944223 0.1155378486055777 0.935672514619883 0.06432748538011696 0.75 0.25 0.8529411764705882 0.1470588235294118 0.9532710280373831 0.04672897196261682 0.9705882352941176 0.02941176470588235 0.9791666666666666 0.02083333333333333 0.8333333333333333 0.1666666666666667 0.9750000000000001 0.025 0.9967105263157894 0.003289473684210526 0.988095238095238 0.0119047619047619 0.75 0.25 0.9666666666666667 0.03333333333333333 0.9777777777777779 0.02222222222222222 0.9500000000000001 0.05 0.9761904761904762 0.02380952380952381 0.875 0.125 0.9722222222222222 0.02777777777777778 0.9964028776978417 0.003597122302158274 0.9952830188679245 0.004716981132075472 0.75 0.25 0.9583333333333333 0.04166666666666666 0.9913793103448276 0.008620689655172414</probabilities>
+		</cpt>
+		<cpt id="symptom">
+			<state id="State0" />
+			<state id="State1" />
+			<parents>cid</parents>
+			<probabilities>0.8547589616810877 0.1452410383189122 0.7408829174664108 0.2591170825335892</probabilities>
+		</cpt>
+		<cpt id="offtrt">
+			<state id="State0" />
+			<state id="State1" />
+			<parents>time oprior cid</parents>
+			<probabilities>0.08646616541353383 0.9135338345864661 0.5140845070422535 0.4859154929577465 0.25 0.75 0.6428571428571428 0.3571428571428571 0.6437699680511182 0.3562300319488818 0.7763157894736842 0.2236842105263158 0.125 0.875 0.6666666666666666 0.3333333333333333 0.8688046647230321 0.1311953352769679 0.8333333333333333 0.1666666666666667 0.7000000000000001 0.3 0.5 0.5 0.9405099150141644 0.0594900849858357 0.5 0.5 0.875 0.125 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="cd820">
+			<state id="s1_below_706" />
+			<state id="s2_706_865" />
+			<state id="s3_865_1030" />
+			<state id="s4_1030_1269" />
+			<state id="s5_1269_up" />
+			<parents>cd420</parents>
+			<probabilities>0.4517045454545455 0.1647727272727273 0.1221590909090909 0.1306818181818182 0.1306818181818182 0.3608247422680412 0.1715089034676664 0.1649484536082474 0.1602624179943768 0.1424554826616682 0.2319444444444445 0.1611111111111111 0.1888888888888889 0.1958333333333333 0.2222222222222222</probabilities>
+		</cpt>
+		<cpt id="cd80">
+			<state id="s1_below_893" />
+			<state id="s2_893_up" />
+			<parents>cd40 cd820</parents>
+			<probabilities>0.8814814814814815 0.1185185185185185 0.7272727272727273 0.2727272727272727 0.673469387755102 0.3265306122448979 0.293103448275862 0.7068965517241379 0.1896551724137931 0.8103448275862069 0.8825995807127883 0.1174004192872117 0.6460905349794239 0.3539094650205762 0.3688524590163935 0.6311475409836066 0.1767241379310345 0.8232758620689655 0.05263157894736842 0.9473684210526315 0.8080808080808082 0.1919191919191919 0.4406779661016949 0.559322033898305 0.2258064516129032 0.7741935483870968 0.08823529411764705 0.9117647058823529 0.00684931506849315 0.9931506849315068</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 4.1.3724.0 ACADEMIC" name="data_bayes">
+			<node id="time">
+				<name>time</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>534 360 606 408</position>
+				<barchart active="true" width="128" height="90" />
+			</node>
+			<node id="trt">
+				<name>trt</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>164 124 236 172</position>
+				<barchart active="true" width="128" height="90" />
+			</node>
+			<node id="age">
+				<name>age</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>2452 523 2524 571</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="wtkg">
+				<name>wtkg</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>2274 270 2346 318</position>
+				<barchart active="true" width="128" height="90" />
+			</node>
+			<node id="hemo">
+				<name>hemo</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>2251 507 2323 555</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="homo">
+				<name>homo</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1626 391 1698 439</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="drugs">
+				<name>drugs</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>875 772 947 820</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="karnof">
+				<name>karnof</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>903 640 975 688</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="oprior">
+				<name>oprior</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>757 1072 829 1120</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="z30">
+				<name>z30</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>2096 850 2168 898</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="preanti">
+				<name>preanti</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>940 60 1012 108</position>
+				<barchart active="true" width="128" height="72" />
+			</node>
+			<node id="race">
+				<name>race</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1466 40 1538 88</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="gender">
+				<name>gender</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1961 75 2033 123</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="str2">
+				<name>str2</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>371 18 443 66</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="strat">
+				<name>strat</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1835 642 1907 690</position>
+				<barchart active="true" width="128" height="72" />
+			</node>
+			<node id="symptom">
+				<name>symptom</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>841 431 913 479</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="treat">
+				<name>treat</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>249 505 321 553</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="offtrt">
+				<name>offtrt</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>726 567 798 615</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="cd40">
+				<name>cd40</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1018 189 1090 237</position>
+				<barchart active="true" width="128" height="72" />
+			</node>
+			<node id="cd420">
+				<name>cd420</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>653 121 725 169</position>
+				<barchart active="true" width="128" height="72" />
+			</node>
+			<node id="cd80">
+				<name>cd80</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1082 586 1154 634</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="cd820">
+				<name>cd820</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>918 330 990 378</position>
+				<barchart active="true" width="128" height="108" />
+			</node>
+			<node id="cid">
+				<name>cid</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>742 297 814 345</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<textbox>
+				<caption>Input file: data_bayes.csv\nData rows: 2139\nElapsed time: 0.547s\n\nLearning algorithm: Bayesian Search\nAlgorithm parameters:\nIterations: 20\nMax parent count: 8\nSample size: 50\nLink probability: 0.1\nPrior link probability: 0.001\nSeed: 0\nMax search time: 0\nBackground knowledge was provided:\n  forced arcs: 3\n  nodes assigned to tiers: 1\n\nBest score in iteration 19: -28625.4\nEM Log Likelihood: -28969.3</caption>
+				<font color="000000" name="Arial" size="8" />
+				<position>21 345 208 611</position>
+			</textbox>
+		</genie>
+	</extensions>
+</smile>
